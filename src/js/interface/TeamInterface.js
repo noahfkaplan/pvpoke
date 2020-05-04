@@ -1065,7 +1065,6 @@ var InterfaceMaster = (function () {
 
 				setTimeout(function(){
 					var results = self.updateTeamResults();
-
 					// Set new page state
 					var cp = battle.getCP();
 					var cup = battle.getCup().name;
@@ -1130,14 +1129,12 @@ var InterfaceMaster = (function () {
 					// Send Google Analytics pageview
 
 					gtag('config', UA_ID, {page_location: (host+url), page_path: url});
-
-
-
+					
+					$(".rate-btn").html("Rate Team");
+					
 					if(results === false){
 						return;
 					}
-
-					$(".rate-btn").html("Rate Team");
 
 					// Scroll down to results
 

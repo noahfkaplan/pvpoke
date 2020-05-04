@@ -285,6 +285,7 @@ function PokeMultiSelect(element){
 		for(var i = 0; i < pokemonList.length; i++){
 			pokemonList[i].initialize(cp, settings.defaultIVs);
 		}
+		self.updateListDisplay();
 	}
 
 	// Convert the current Pokemon list into exportable and savable JSON
